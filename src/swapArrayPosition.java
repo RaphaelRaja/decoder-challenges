@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class swapArrayPosition {
 
     public static void swapArray(int arr[]){
@@ -11,6 +13,18 @@ public class swapArrayPosition {
         }
     }
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+        int arrLen = in.nextInt();
+        int arr[] = new int[arrLen];
+
+        for(int i=0; i<arrLen; i++){
+            arr[i] = in.nextInt();
+        }
+
+        swapArray(arr);
+
+        for (int i=0; i<arrLen; i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }
